@@ -15,8 +15,8 @@ javaSassCompiler({
   in: 'file.scss',
   out: 'file.css',
   minify: true
-}, (err) => {
-  if (err, stdout, stderr) {
+}, (err, stdout, stderr) => {
+  if (err) {
     console.error(`Compile error: ${err}`);
   }
 

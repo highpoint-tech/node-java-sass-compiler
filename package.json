@@ -1,0 +1,28 @@
+{
+  "name": "java-sass-compiler",
+  "version": "0.1.0",
+  "description": "Node wrapper around Vaadin's Java sass-compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hp-mobile/node-java-sass-compiler.git"
+  },
+  "keywords": [
+    "java",
+    "sass",
+    "scss"
+  ],
+  "author": "Jonathan Rehm <jrehm@mhighpoint.com> (https://www.mhighpoint.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hp-mobile/node-java-sass-compiler/issues"
+  },
+  "homepage": "https://github.com/hp-mobile/node-java-sass-compiler#readme",
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-mciparelli": "^0.6.0"
+  }
+}

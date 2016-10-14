@@ -1,6 +1,6 @@
 # java-sass-compiler #
 
-Node wrapper around Vaadin's Java sass-compiler
+Node wrapper around [Vaadin's Java sass-compiler](https://github.com/vaadin/sass-compiler)
 
 ## Installation ##
 

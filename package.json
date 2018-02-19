@@ -1,6 +1,6 @@
 {
   "name": "java-sass-compiler",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node wrapper around Vaadin's Java sass-compiler",
   "main": "index.js",
   "scripts": {

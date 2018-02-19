@@ -12,8 +12,9 @@ function compile(opts, cb) {
     urlMode: false
   }, opts || {});
 
-  let cmd = (os.platform() === 'win32') ?  'java' : '/usr/bin/env java';
-  cmd = `${cmd} -cp ${__dirname}/vaadin-sass-compiler.jar com.vaadin.sass.SassCompiler ${opts.in} ${opts.out}`;
+  let cmd = (os.platform() === 'win32') ? 'java' : '/usr/bin/env java';
+  cmd = `${cmd} -cp ${__dirname}/vaadin-sass-compiler.jar com.vaadin.sass.SassCompiler \
+${opts.in} ${opts.out}`;
 
   if (opts.minify) {
     cmd = `${cmd} -minify:true`;

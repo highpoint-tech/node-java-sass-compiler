@@ -3,9 +3,6 @@
   "version": "0.1.2",
   "description": "Node wrapper around Vaadin's Java sass-compiler",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hp-mobile/node-java-sass-compiler.git"
@@ -15,14 +12,21 @@
     "sass",
     "scss"
   ],
-  "author": "Jonathan Rehm <jrehm@mhighpoint.com> (https://www.mhighpoint.com/)",
+  "author": "HighPoint <support@mhighpoint.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hp-mobile/node-java-sass-compiler/issues"
   },
   "homepage": "https://github.com/hp-mobile/node-java-sass-compiler#readme",
   "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-mciparelli": "^0.6.0"
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "precommit": "lint-staged"
   }
 }

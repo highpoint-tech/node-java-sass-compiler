@@ -4,14 +4,29 @@ Node wrapper around [Vaadin's Java sass-compiler](https://github.com/vaadin/sass
 
 ## Installation ##
 
-`npm install hp-mobile/node-java-sass-compiler`
+`npm install @highpoint/java-sass-compiler`
 
 ## Usage ##
 
 ```javascript
-const javaSassCompiler = require('java-sass-compiler');
+const { compile, compileCallback } = require('@highpoint/java-sass-compiler');
 
-javaSassCompiler({
+// Using Promise
+compile({
+  in: 'file.scss',
+  out: 'file.css',
+  minify: true
+})
+  .then((stdout, stderr) => {
+    console.log(`stdout ${stdout}`);
+    console.log(`stderr ${stderr}`);
+  })
+  .catch(err => {
+    console.error(`Compile error: ${err}`);
+  });
+
+// Using callback
+compileCallback({
   in: 'file.scss',
   out: 'file.css',
   minify: true

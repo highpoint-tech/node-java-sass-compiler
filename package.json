@@ -1,6 +1,6 @@
 {
   "name": "@highpoint/java-sass-compiler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node wrapper around Vaadin's Java sass-compiler",
   "main": "index.js",
   "repository": {
@@ -14,6 +14,7 @@
     "url": "https://github.com/hp-mobile/node-java-sass-compiler/issues"
   },
   "homepage": "https://github.com/hp-mobile/node-java-sass-compiler#readme",
+  "files": ["vaadin-sass-compiler.jar"],
   "devDependencies": {
     "eslint": "^5.4.0",
     "eslint-config-prettier": "^3.0.1",
